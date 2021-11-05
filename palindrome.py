@@ -1,8 +1,7 @@
 b = input('Podaj palindrom : ')
 
 def is_palindrome(word):
-    word = word.lower()
-    word = word.replace(" ","")
+    word = ''.join([word.lower() for x in word if word.isalpha()])
     """
     sprawdza czy podane słowo to palindrom
     zwraca wartosc false jesli nie, true jesli tak
